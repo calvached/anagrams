@@ -1,0 +1,16 @@
+<form action="/anagrams" method="post">
+    Type in an word:
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+<% if @matches %>
+<ul>
+  <% for @item in @matches %>
+    <li><%= @item %></li>
+  <% end %>
+</ul>
+
+<%end%>
+
+
